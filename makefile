@@ -19,3 +19,14 @@ docker-up:
 
 docker-down:
 	docker compose down
+
+docker-python-up:
+	docker pull python
+	docker run python
+	docker ps
+	docker ps -a
+	docker run -it python bash
+	docker run -d python sleep 30
+	docker ps
+	
+
